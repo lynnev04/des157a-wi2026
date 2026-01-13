@@ -169,6 +169,15 @@ footer {
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #cb3781;
+}
+
 @keyframes textGlow {
     0% {
         text-shadow: 0 0 4px #fff, 0 0 6px #f0c, 0 0 8px #f0c;
