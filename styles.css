@@ -1,3 +1,182 @@
 body {
-    background-color: aqua;
+    background-color: white;
+    background-image: url("images/pinkcheck.png");
+    background-size: 50px 50px;
+}
+
+#banner {
+    width: 1100px;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #faf5f9;
+    background: radial-gradient(circle, rgba(250, 245, 249, 1) 0%, rgba(247, 200, 240, 1) 50%, rgba(128, 96, 107, 1) 100%);
+    width: 1100px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-style: dotted;
+    border-color: #7A4565;
+    border-width: 3px;
+}
+
+.banner-border {
+    border: 20px solid transparent;
+    border-image-source: url("images/laceborder.png");
+    border-image-slice: 20;
+    border-image-repeat: repeat;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#banner h1 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+#banner h2 {
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.banner-border:hover #banner h1,
+.banner-border:hover #banner h2 {
+    color: #cb3781;
+    animation: textGlow 2s infinite alternate;
+
+}
+
+header {
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    gap: 50px;
+    padding-bottom: 70px;
+}
+
+.research, .madlibs, .everypicture, .gameon {
+    width: 250px;
+    height: 300px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+.title {
+    background: linear-gradient(#dcc1cf, white 50%, #dcc1cf 50%, white);
+    border-style: outset;
+    border-bottom: 1px solid black;
+    border-width: 2px;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.header-btn {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1;
+    border: 1px solid black;
+    background-color: #f7f2f5;
+}
+
+ul {
+    list-style: none;
+    padding: 20px 10px 10px;
+    margin: 0;
+}
+
+li {
+    font-family: "VT323", monospace;
+    font-size: 20px;
+    padding: 4px 8px;
+    border: 1px solid black;
+    background-color: #f9ecf4;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.3);
+    width: 200px;
+    border-radius: 5px;
+    margin: 0 auto 4px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+li:hover {
+    background-color: #e294bb;
+    color: white;
+    transform: translateY(-3px) scale(1);
+    box-shadow: inset 2px 2px 0 #999, inset -2px -2px 0 #fff;
+    cursor: pointer;
+}
+
+footer {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  padding: 10px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #E6C5D7;
+  border-radius: 5px;
+  border-style: dotted;
+  border-width: 2px;
+  border-color: #7A4565;
+}
+
+.footer-border {
+    width: 1175px; 
+    border: 20px solid transparent;
+    border-image: url("images/laceborder.png") 30 repeat;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 4px #fff, 0 0 6px #f0c, 0 0 8px #f0c;
+    }
+    50% {
+        text-shadow: 0 0 6px #fff, 0 0 10px #f0c, 0 0 15px #f0c;
+    }
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 6px #f0c, 0 0 8px #f0c;
+    }
 }
