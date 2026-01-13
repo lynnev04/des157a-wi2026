@@ -1,6 +1,5 @@
 body {
-    background-color: white;
-    background-image: url("images/pinkcheck.png");
+    background-color: rgb(244, 228, 238);
     background-size: 50px 50px;
 }
 
@@ -26,16 +25,7 @@ body {
     border-radius: 5px;
     border-style: dotted;
     border-color: #7A4565;
-    border-width: 3px;
-}
-
-.banner-border {
-    border: 20px solid transparent;
-    border-image-source: url("images/laceborder.png");
-    border-image-slice: 20;
-    border-image-repeat: repeat;
-    box-sizing: border-box;
-    display: inline-block;
+    border-width: 5px;
 }
 
 #banner h1 {
@@ -49,10 +39,10 @@ body {
     line-height: 1.1;
 }
 
-.banner-border:hover #banner h1,
-.banner-border:hover #banner h2 {
+#banner:hover {
     color: #cb3781;
     animation: textGlow 2s infinite alternate;
+    cursor: pointer;
 
 }
 
@@ -156,17 +146,6 @@ footer {
   border-style: dotted;
   border-width: 2px;
   border-color: #7A4565;
-}
-
-.footer-border {
-    width: 1175px; 
-    border: 20px solid transparent;
-    border-image: url("images/laceborder.png") 30 repeat;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 a {
