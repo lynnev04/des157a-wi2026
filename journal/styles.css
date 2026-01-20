@@ -1,0 +1,124 @@
+body {
+    background-image: url(images/bgpattern.png);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 880px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: groove #946B7D 5px;
+}
+
+.header {
+    width: 100%;
+    height: 210px;
+    border-bottom: solid #946B7D 3px;
+    font-family: "DotGothic16", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+
+.header-row1,
+.header-row2 {
+    display: flex;
+    align-items: center;
+}
+
+.header-row1 {
+    justify-content: flex-start;
+    padding-left: 110px;
+
+}
+
+.header-row2 {
+    justify-content: flex-end;
+    padding-right: 100px;
+  
+}
+
+.header h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+.navigation {
+    width: 150px;
+    border-right: solid #946B7D 3px;
+    font-family: "DotGothic16", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul {
+    list-style: none;
+    line-height: 1.5;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #85385A;
+}
+
+.navigation a:hover {
+    color: #FF6DAD;
+}
+
+.content {
+    display: flex;
+    min-height: calc(100vh - 180px);
+}
+
+.mainbox {
+    padding: 20px 0 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.mainbox article {
+    max-width: 625px;
+    width: 100%;
+    /*height: 600px;
+    overflow: scroll;*/
+}
+
+.mainbox p {
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+
+article h2 {
+    font-family: "DotGothic16", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 0.5;
+}
+
+article time {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 300px;
+    font-style: normal;
+    font-size: 15px;
+    color: #AC0850;
+}
+
+article a {
+    text-decoration: none;
+    color: #AC0850;
+}
