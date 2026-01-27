@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation</title>
+</head>
+<body>
+    <h1>Guess that Farm Animal! ⍝◜ᐢ•⚇•ᐢ◝⍝</h1>
+    <button id="guessbtn">Guess Animal</button>
+    <p id="result"></p>
+
+    <script>
+        function guessAnimal() {
+            let animals = ["horse", "cow", "pig", "sheep", "chicken"];
+
+            let userGuess = prompt("Guess the farm animal I am thinking of: horse, cow, pig, sheep, or chicken?");
+
+            let randomIndex = Math.floor(Math.random() * animals.length);
+            let chosenAnimal = animals[randomIndex];
+
+            let resultMessage = document.getElementById("result");
+
+            if(userGuess === chosenAnimal) {
+                resultMessage.textContent = "Congratulations! You are correct!";
+            } else {
+                resultMessage.textContent = "Not quite. I was thinking of a " + chosenAnimal + ". Try again!";
+            }
+        }
+
+        document.getElementById("guessbtn").addEventListener("click", guessAnimal);
+    </script>
+
+    <!-- My program allows users to guess a farm animal from a list of five options. When the button is clicked, a prompt appears for the user that asks them to guess which animal they think the program has randomly selected. After the user guesses, the program compares the user's guess to the randomly chosen animal and displays a message indicating whether their guess was correct or not. If the user does not guess correctly, they are encouraged to try again. -->
+     
+</body>
+</html>
