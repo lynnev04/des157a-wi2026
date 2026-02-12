@@ -18,7 +18,7 @@
 
         console.log(noun1, adjective1, noun2, verb, exclamation, adjective2);
 
-        const story = `At Space Station ${noun1}, a ${adjective1} mission began when the emergency siren played funky disco music and flashing colored lights. A floating ${noun2} challenged the crew to a dance battle, so they left their spaceship and tried to ${verb} while spinning in zero gravity. Suddenly, the captain bumped into a supersized rubber duck and yelled, “${exclamation}!” Somehow, despite the chaos, the mission ended in a ${adjective2} success.`;
+        const story = `At Space Station <span class="fill-word">${noun1}</span>, a <span class="fill-word">${adjective1}</span> mission began when the emergency siren played funky disco music and flashing colored lights. A floating <span class="fill-word">${noun2}</span> challenged the crew to a dance battle, so they left their spaceship and tried to <span class="fill-word">${verb}</span> while spinning in zero gravity. Suddenly, the captain bumped into a supersized rubber duck and yelled, “<span class="fill-word">${exclamation}</span>!” Somehow, despite the chaos, the mission ended in a <span class="fill-word">${adjective2}</span> success.`;
 
     storyParagraph.innerHTML = story;
     overlay.classList.add("active");
