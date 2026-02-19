@@ -25,7 +25,7 @@ body {
 .shelf {
   position: relative;
   width: 100%;
-  height: calc(100vh - 120px); /* reserves space for title */
+  height: calc(100vh - 120px);
   background-image: url(images/bookshelf.png);
   background-size: contain;
   background-repeat: no-repeat;
