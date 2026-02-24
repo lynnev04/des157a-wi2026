@@ -1,0 +1,138 @@
+.page-title {
+  text-align: center;
+  margin: 30px 0 10px;
+  font-size: 2.5rem;
+  font-family: "Homemade Apple", cursive;
+}
+
+body {
+  background: radial-gradient(circle, #ffd6e9, #e0f6d7, #e1f0ff, #fff3c4);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+img {
+  width: 150px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  z-index: 1;
+  animation: glowPulse 3.5s ease-in-out infinite;
+  transition: transform 0.4s ease;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(255, 240, 200, 0.6))
+            drop-shadow(0 0 18px rgba(255, 220, 180, 0.4));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 18px rgba(255, 240, 200, 1))
+            drop-shadow(0 0 35px rgba(255, 220, 180, 0.8));
+  }
+}
+
+.shelf {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url(images/bookshelf.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.nyota {
+  top: 5%;
+  left: 38%;
+}
+
+.calicocritter {
+  top: 7%;
+  left: 47%;
+}
+
+.kirby {
+  top: 43%;
+  left: 43%;
+}
+
+.smiski {
+  top: 68%;
+  left: 38%;
+}
+.cat {
+  top: 68%;
+  left: 46%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.story-title {
+  font-family: "Homemade Apple", cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.overlay-content {
+  background: rgb(249, 243, 221);
+  border-radius: 10px;
+  color: #222;
+  width: 350px;
+  max-width: 90vw;
+  height: 60%;
+  padding: 2rem;
+  box-shadow: -10px 0 40px rgba(0,0,0,0.3);
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+
+.overlay-content p {
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.close {
+  display: block;   
+  margin: 20px auto 0;
+  background: none;
+  border: 1px solid #222;
+  border-radius: 10px;
+  color: #222;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: "Homemade Apple", cursive;
+  font-size: 15px;
+}
+
+.close:hover {
+  background-color: rgb(252, 234, 166);  
+  color: #222;                 
+  transform: scale(1.05);      
+}
