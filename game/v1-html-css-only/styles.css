@@ -1,0 +1,111 @@
+body {
+    background-color: #F8FFEC;
+    font-family: "Kulim Park", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamehead {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 60px 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 80px;
+    color: #5C6A44;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #6a7e3a;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.startover {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    background: none;
+    border: none;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #6a7e3a;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.game {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.player1, .player2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 180px;
+}
+
+.seedcount {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #A10068;
+}
+
+.playerlabel {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #374E0F;
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 28px;
+    padding-bottom: 4px;
+}
+
+.pass-btn {
+    background: #f2d8f0;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #374E0F;
+    padding: 14px 36px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pass-btn:hover {
+    background: #e8c4e4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(180, 80, 160, 0.18);
+}
+
+.pass-btn:active {
+    transform: translateY(0px);
+}
