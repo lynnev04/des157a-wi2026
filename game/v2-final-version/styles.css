@@ -1,0 +1,198 @@
+body {
+    background-color: #F8FFEC;
+    font-family: "Kulim Park", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.gamehead {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 80px;
+    color: #5C6A44;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #6a7e3a;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.startover {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    background: #e3efce;
+    border-radius: 15px;
+    border: 2px solid #374E0F;
+    padding: 14px 36px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.15s, transform 0.12s, box-shadow 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.startover:hover {
+    background: #c2e08a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(80, 140, 40, 0.18);
+}
+
+.game {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 180px;
+}
+
+.score {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #A10068;
+}
+
+.playerlabel {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #374E0F;
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-bottom: 4px;
+}
+
+#turn-text{
+    font-size: 30px;
+    font-weight: 600;
+    color: #374E0F;
+    text-align: center;
+}
+
+.start-btn {
+    background: #f2d8f0;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #374E0F;
+    padding: 14px 36px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background: #e8c4e4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(180, 80, 160, 0.18);
+}
+
+.start-btn:active {
+    transform: translateY(0px);
+}
+
+.btn-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+#roll-btn {
+    background: #d4edaa;
+    border-radius: 15px;
+    border: 2px solid #374E0F;
+    padding: 14px 36px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.15s, transform 0.12s, box-shadow 0.15s;
+}
+
+#roll-btn:hover {
+    background: #c2e08a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(80, 140, 40, 0.18);
+}
+
+#roll-btn:active {
+    transform: translateY(0px);
+}
+
+#pass-btn {
+    background: #f2d8f0;
+    border-radius: 15px;
+    border: 2px solid #374E0F;
+    padding: 14px 36px;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.15s, transform 0.12s, box-shadow 0.15s;
+}
+
+#pass-btn:hover {
+    background: #e8c4e4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(180, 80, 160, 0.18);
+}
+
+#pass-btn:active {
+    transform: translateY(0px);
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+footer a {
+    color: #6a7e3a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

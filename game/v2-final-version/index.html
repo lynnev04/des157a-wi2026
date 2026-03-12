@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On! V1</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <button class="startover">Start Over</button>
+    <div class="gamehead">
+        <h1>Grow or Go</h1>
+        <p>The first flower to obtain 30 seeds or more wins!</p>
+
+    <div class="game">
+
+      <div class="player" id="player1">
+        <div class="flower1">
+            <img src="images/flowersprout.png" alt="flower1" width="300" height="300">
+        </div>
+        <div class="score" id="score1">
+          0 seeds
+        </div>
+        <div class="playerlabel">Player 1</div>
+      </div>
+
+      <div class="center">
+
+        <img id="dice" src="images/dice1.png" alt="dice" width="400">
+
+        <div id="turn-text">Click Start Game</div>
+        <button class="start-btn">Start Game</button>
+          <div class="btn-group">
+              <button id="roll-btn" style="display: none;">
+                Roll
+              </button>
+              <button id="pass-btn" style="display: none;">
+                Pass
+              </button>
+          </div>
+      </div>
+
+      <div class="player" id="player2">
+        <div class="flower2">
+          <img src="images/flowersprout.png" alt="flower2" width="300" height="300">
+        </div>
+        <div class="score" id="score2">
+          0 seeds
+        </div>
+        <div class="playerlabel">Player 2</div>
+      </div>
+    </div>
+    <footer>
+      <p><a href="sources.html">Sound Effects Sources</a></p>
+    </footer>
+  </div>
+</body>
+</html>
